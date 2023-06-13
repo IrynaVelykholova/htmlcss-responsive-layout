@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blue:rgb(0, 132, 253);
+    --light-blue:rgb(181, 221, 255);
+    --odd:rgb(151, 146, 228);
+    --my-gap: 1rem;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION */
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* CONTAINER  */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    flex-direction: column;
+} 
+
+/* COL  */
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid red;
+    padding: 1rem;
+}
+.col-1-3 {
+    flex-basis: calc((100% / 3) - var(--my-gap));
+}
+
+.col-2-3 {
+    flex-basis: calc(((100% / 3) * 2) - var(--my-gap));
+}
+
+/* CARD  */
+header .card {
+    background-color: var(--light-blue);
+}
+.card {
+    padding: 25px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+/* TITLE */
+h3 {
+    padding-bottom: 30px;
+}
+header h3 {
+    color: var(--blue);
+    text-align: start;
+}
+
+/* PARAGRAPH */
+p {
+    line-height: 1.5rem;
+}
+
+/* TEXT  */
+.text-grey {
+    color: rgb(90, 110, 127);
+}
+.text-white {
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
+
+/* NAV  */
+nav {
+    background-color: var(--blue);
+    color: white;
+}
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+/* SECTION ODD */
+.section-odd {
+    background-color: var(--odd);
+}
+.section-odd .text-white > img,
+.section-odd .card-white > img {
+    height: 350px;
+}
+.card-white {
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+.card-white p {
+    padding-bottom: 120px;
+}
+.push {
+    position: absolute;
+    bottom: 6%;
+    left: calc ((50%) - (45px / 2))
+    transform: translate (-50%, -50%);
+    background-color: var(--odd);
+    border-radius: 50%;
+    padding: 15px;
+    height: auto;
+} 
+
+
+
+/* .container-md {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container-sm {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container-xs {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.container-xxs {
+    padding-left: 30%;
+    padding-right: 30%;
+} */
+
+  /* Contenitore da usare ogni volta che dobbiamo creare delle colonne */
+
+  /* .gap-0 {
+    --my-gap: 0rem;
+  }
+  
+  .gap-2 {
+    --my-gap: 2rem;
+  }
+  
+  .gap-3 {
+    --my-gap: 3rem;
+  }
+  
+
+  
+  .col-1-2 {
+    flex-basis: calc(50% - var(--my-gap));
+  } */
