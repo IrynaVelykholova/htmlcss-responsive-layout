@@ -31,11 +31,10 @@ section {
     padding-right: 40px;
 }
 
-.container-sm {
+/* .container-sm {
     padding-left: 100px;
     padding-right: 100px;
-}
-
+}  */
 .container-xs {
     padding-left: 25%;
     padding-right: 25%;
@@ -48,7 +47,7 @@ section {
 /* ROW */
 .row {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 } 
 
 /* COL  */
@@ -73,7 +72,8 @@ header .card {
 .card {
     padding: 25px 25px;
     border-radius: 20px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 /* TITLE */
@@ -126,19 +126,42 @@ header button {
     padding: 15px 30px;
     border-radius: 30px;
 }
+.col-2-3 img {
+    width: 300px;
+    margin-top: 20px;
+}
+.card-blue {
+    display: flex;
+    flex-direction: column;
+}
+.col-1-3 .card i {
+    color: var(--blue);
+    text-align: center;
+}
+.text-with-icons {
+    margin-top: 20px;
+}
 
 /* SECTION ODD */
 .section-odd {
     background-color: var(--odd);
 }
-.section-odd .text-white > img,
-.section-odd .card-white > img {
+.section-odd .text-white > img {
     height: 350px;
+}
+.section-odd .card-white img {
+    height: 350px;
+}
+.section-odd .card-white .image {
+    display: flex;
+    justify-content: center;
 }
 .card-white {
     background-color: white;
     border-radius: 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .card-white p {
     padding-bottom: 120px;
@@ -157,27 +180,18 @@ header button {
 .card-purple {
     background-color: var(--odd);
     display: flex;
-    gap: var(--my-gap: 2rem);
+    gap: 2rem;
+    text-align: center;
 }
 .card-purple img {
-    max-height: 150px;
-    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-  /* .gap-0 {
-    --my-gap: 0rem;
-  }
-  
-  .gap-2 {
-    --my-gap: 2rem;
-  }
-  
-  .gap-3 {
-    --my-gap: 3rem;
-  }
-  
 
   
-  .col-1-2 {
+  /* .col-1-2 {
     flex-basis: calc(50% - var(--my-gap));
-  } */
+  } */ */
